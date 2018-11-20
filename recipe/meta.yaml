@@ -14,9 +14,9 @@ source:
   sha256: 9a273a04e9d4853c8b477fda989b08c2e276b6fd1758bc81cb1d2ab405aa6bf0
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,8 +46,7 @@ about:
     provides some functions for Bayesian inference including Bayesian Credible Intervals
     (BCI) and Deviance Information Criterion (DIC) calculation.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
