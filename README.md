@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=MHadaptive
 
 Package license: GPL (>= 3)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mhadaptive-feedstock/blob/master/LICENSE.txt)
 
 Summary: Performs general Metropolis-Hastings Markov Chain Monte Carlo sampling of a user defined function which returns the un-normalized value (likelihood times prior) of a Bayesian model.  The proposal variance-covariance structure is updated adaptively for efficient mixing when the structure of the target distribution is unknown.  The package also provides some functions for Bayesian inference including Bayesian Credible Intervals (BCI) and Deviance Information Criterion (DIC) calculation.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-mhadaptive` from the `conda-forge` channel can be achieved by addi
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-mhadaptive` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
