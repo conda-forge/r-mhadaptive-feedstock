@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: MHadaptive_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/MHadaptive_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MHadaptive/MHadaptive_{{ version }}.tar.gz
   sha256: 9a273a04e9d4853c8b477fda989b08c2e276b6fd1758bc81cb1d2ab405aa6bf0
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 1002
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,7 +37,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=MHadaptive
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Performs general Metropolis-Hastings Markov Chain Monte Carlo sampling of a user defined
     function which returns the un-normalized value (likelihood times prior) of a Bayesian
     model.  The proposal variance-covariance structure is updated adaptively for efficient
@@ -51,8 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
