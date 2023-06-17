@@ -1,11 +1,11 @@
-About r-mhadaptive
-==================
+About r-mhadaptive-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mhadaptive-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=MHadaptive
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mhadaptive-feedstock/blob/main/LICENSE.txt)
 
 Summary: Performs general Metropolis-Hastings Markov Chain Monte Carlo sampling of a user defined function which returns the un-normalized value (likelihood times prior) of a Bayesian model.  The proposal variance-covariance structure is updated adaptively for efficient mixing when the structure of the target distribution is unknown.  The package also provides some functions for Bayesian inference including Bayesian Credible Intervals (BCI) and Deviance Information Criterion (DIC) calculation.
 
